@@ -13,4 +13,22 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 - con difficoltà 2 => 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe;
 - con difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
 
+## Steps
+
+- impostare la pagina html con header(dove andrà il bottone), main(dove andrà il contenitore della griglia) e il footer
+- creare delle variabili in js:
+    - una variabile per collegare il bottone e farlo funzionare(eventlistener())
+    - una variabile per il numero di celle che serviranno
+    - una variabile con il markup delle singole celle
+- creare un ciclo (for) per generare il numero di celle
+- attraverso .toggle() quando l'utente cliccherà su una casella quella si illuminerà e manderà un messaggio in console   
+
+
 ## Tools
+
+- const / let
+- getelementbyid / queryselector
+- for
+- eventlistener()
+- markup
+- toggle()
