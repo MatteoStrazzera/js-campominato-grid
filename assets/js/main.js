@@ -25,3 +25,7 @@ console.log(gridContainer);
 
 // creare un ciclo (for) per generare il numero di celle
 
+for (let i = 0; i < numberOfCell; i++) {
+    
+    gridContainer.insertAdjacentHTML('beforeend', markupCell);
+}

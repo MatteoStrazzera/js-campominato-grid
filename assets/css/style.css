@@ -19,11 +19,15 @@ body{
 
 .container{
     margin: auto;
-    border: 1px solid black;
-    width: 800px;
-    height: 800px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
+
+    .cell{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
 }
 
 #site_footer{
