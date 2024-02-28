@@ -16,3 +16,12 @@ console.log(numberOfCell);
 const markupCell = `<div class="cell"></div>`;
 
 console.log(markupCell);
+
+// una variabile per il container in html
+
+const gridContainer = document.querySelector('.container');
+
+console.log(gridContainer);
+
+// creare un ciclo (for) per generare il numero di celle
+
