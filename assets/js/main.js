@@ -13,11 +13,15 @@ const gridContainer = document.querySelector('.container');
 
 // console.log(gridContainer);
 
-// una variabile per collegare il bottone e renderlo attivo per generare il gioco
+// colleghiamo il form nella DOM e attiviamo un evento al submit
 
-const btn = document.getElementById('btn');
+document.querySelector('form').addEventListener('submit', function (e) {
 
-btn.addEventListener('click', function () {
+    // preveniamo il reload di form
+    e.preventDefault();
+    
+    // blocchiamo la creazione di altri container al click di play
+    gridContainer.innerHTML = '';
 
     for (let i = 1; i <= numberOfCell; i++) {
 
