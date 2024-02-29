@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* utilities */
+
+.bg_active-cell{
+    background-color: azure;
+}
+
+/* end utilities */
+
 body{
     background-color: aquamarine;
 }
