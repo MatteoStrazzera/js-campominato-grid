@@ -11,7 +11,7 @@ const numberOfCell = 100;
 
 const gridContainer = document.querySelector('.container');
 
-console.log(gridContainer);
+// console.log(gridContainer);
 
 // una variabile per collegare il bottone e renderlo attivo per generare il gioco
 
@@ -23,19 +23,15 @@ btn.addEventListener('click', function () {
 
         const numberInCell = i;
         // creazione singola cella ed inserimento nel container
-        const cellNode = document.createElement('div');
-
-        cellNode.classList.add('cell');
-
-        cellNode.textContent = numberInCell;
+        const cellNode = generateCell(numberInCell);
         // rendiamo le singole celle attive, quando si cliccano cambiano colore ed inviano il numero in console
         cellNode.addEventListener('click', function () {
-            
+
             cellNode.classList.toggle('bg_active-cell');
             console.log(cellNode.innerText);
         })
 
-        console.log(cellNode);
+        // console.log(cellNode);
 
         gridContainer.insertAdjacentElement('beforeend', cellNode);
 
@@ -44,8 +40,21 @@ btn.addEventListener('click', function () {
 })
 
 
+/**
+ * funzione per generare il nodo della cella tot n° di volte
+ * @param {number} numb 
+ * @returns 
+ */
+function generateCell(numb) {
 
-// creare un ciclo (for) per generare il numero di celle con all'interno i numeri in progressione
+    const cellNode = document.createElement('div');
+
+    cellNode.classList.add('cell');
+
+    cellNode.innerText = numb;
+
+    return cellNode;
+}
 
 
 
