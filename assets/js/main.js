@@ -30,4 +30,8 @@ for (let i = 1; i <= numberOfCell; i++) {
     const numberInCell = i;
     const markupCell = `<div class="cell">${numberInCell}</div>`;
     gridContainer.insertAdjacentHTML('beforeend', markupCell);
+
+    console.log(markupCell);
 }
+
+// attraverso .toggle() quando l'utente cliccherà su una casella quella si illuminerà e manderà un messaggio in console

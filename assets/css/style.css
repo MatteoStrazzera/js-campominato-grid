@@ -19,13 +19,13 @@ body{
 
 .container{
     margin: auto;
-    width: 1000px;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
 
     .cell{
-        width: 100px;
-        height: 100px;
+        width: calc(100% / 10);
+        aspect-ratio: 1;
         border: 1px solid black;
         display: flex;
         justify-content: center;
