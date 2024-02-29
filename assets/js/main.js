@@ -22,23 +22,30 @@ btn.addEventListener('click', function () {
     for (let i = 1; i <= numberOfCell; i++) {
 
         const numberInCell = i;
-        // creazione singola cella ed inserimento nel container
+        // creazione delle singole celle 
         const cellNode = generateCell(numberInCell);
-        // rendiamo le singole celle attive, quando si cliccano cambiano colore ed inviano il numero in console
-        cellNode.addEventListener('click', function () {
-
-            cellNode.classList.toggle('bg_active-cell');
-            console.log(cellNode.innerText);
-        })
-
-        // console.log(cellNode);
-
+        // cambio colore celle al click
+        eventOnCell(cellNode);
+        // inserimento celle nel container
         gridContainer.insertAdjacentElement('beforeend', cellNode);
 
     }
 
 })
 
+
+/**
+ * funzione per generare un evento al click sulle singole celle
+ * @param {*} node 
+ */
+function eventOnCell(node) {
+
+    node.addEventListener('click', function () {
+
+        node.classList.toggle('bg_active-cell');
+        console.log(node.innerText);
+    })
+}
 
 /**
  * funzione per generare il nodo della cella tot n° di volte
